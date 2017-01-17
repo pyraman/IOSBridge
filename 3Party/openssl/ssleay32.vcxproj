@@ -1,0 +1,292 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ssl\aes_locl.h" />
+    <ClInclude Include="ssl\apps.h" />
+    <ClInclude Include="ssl\asn1_locl.h" />
+    <ClInclude Include="ssl\bf_locl.h" />
+    <ClInclude Include="ssl\bf_pi.h" />
+    <ClInclude Include="ssl\bio_lcl.h" />
+    <ClInclude Include="ssl\bn_lcl.h" />
+    <ClInclude Include="ssl\bn_prime.h" />
+    <ClInclude Include="ssl\buildinf.h" />
+    <ClInclude Include="ssl\cast_lcl.h" />
+    <ClInclude Include="ssl\cast_s.h" />
+    <ClInclude Include="ssl\cmll_locl.h" />
+    <ClInclude Include="ssl\cms_lcl.h" />
+    <ClInclude Include="ssl\conf_def.h" />
+    <ClInclude Include="ssl\cryptlib.h" />
+    <ClInclude Include="ssl\des_locl.h" />
+    <ClInclude Include="ssl\des_ver.h" />
+    <ClInclude Include="ssl\dsa_locl.h" />
+    <ClInclude Include="ssl\dtls1.h" />
+    <ClInclude Include="ssl\ech_locl.h" />
+    <ClInclude Include="ssl\ecs_locl.h" />
+    <ClInclude Include="ssl\ec_lcl.h" />
+    <ClInclude Include="ssl\evp_locl.h" />
+    <ClInclude Include="ssl\e_4758cca_err.h" />
+    <ClInclude Include="ssl\e_aep_err.h" />
+    <ClInclude Include="ssl\e_atalla_err.h" />
+    <ClInclude Include="ssl\e_capi_err.h" />
+    <ClInclude Include="ssl\e_chil_err.h" />
+    <ClInclude Include="ssl\e_cswift_err.h" />
+    <ClInclude Include="ssl\e_gmp_err.h" />
+    <ClInclude Include="ssl\e_nuron_err.h" />
+    <ClInclude Include="ssl\e_os.h" />
+    <ClInclude Include="ssl\e_sureware_err.h" />
+    <ClInclude Include="ssl\e_ubsec_err.h" />
+    <ClInclude Include="ssl\idea_lcl.h" />
+    <ClInclude Include="ssl\kssl.h" />
+    <ClInclude Include="ssl\kssl_lcl.h" />
+    <ClInclude Include="ssl\md32_common.h" />
+    <ClInclude Include="ssl\md4_locl.h" />
+    <ClInclude Include="ssl\md5_locl.h" />
+    <ClInclude Include="ssl\modes_lcl.h" />
+    <ClInclude Include="ssl\obj_dat.h" />
+    <ClInclude Include="ssl\obj_xref.h" />
+    <ClInclude Include="ssl\o_dir.h" />
+    <ClInclude Include="ssl\o_str.h" />
+    <ClInclude Include="ssl\o_time.h" />
+    <ClInclude Include="ssl\pcy_int.h" />
+    <ClInclude Include="ssl\progs.h" />
+    <ClInclude Include="ssl\rc2_locl.h" />
+    <ClInclude Include="ssl\rc4_locl.h" />
+    <ClInclude Include="ssl\rmdconst.h" />
+    <ClInclude Include="ssl\rmd_locl.h" />
+    <ClInclude Include="ssl\rpc_des.h" />
+    <ClInclude Include="ssl\seed_locl.h" />
+    <ClInclude Include="ssl\sha_locl.h" />
+    <ClInclude Include="ssl\spr.h" />
+    <ClInclude Include="ssl\srtp.h" />
+    <ClInclude Include="ssl\ssl.h" />
+    <ClInclude Include="ssl\ssl2.h" />
+    <ClInclude Include="ssl\ssl23.h" />
+    <ClInclude Include="ssl\ssl3.h" />
+    <ClInclude Include="ssl\ssl_locl.h" />
+    <ClInclude Include="ssl\s_apps.h" />
+    <ClInclude Include="ssl\testdsa.h" />
+    <ClInclude Include="ssl\testrsa.h" />
+    <ClInclude Include="ssl\tls1.h" />
+    <ClInclude Include="ssl\ui_locl.h" />
+    <ClInclude Include="ssl\wp_locl.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="ssl\bio_ssl.c" />
+    <ClCompile Include="ssl\d1_both.c" />
+    <ClCompile Include="ssl\d1_clnt.c" />
+    <ClCompile Include="ssl\d1_enc.c" />
+    <ClCompile Include="ssl\d1_lib.c" />
+    <ClCompile Include="ssl\d1_meth.c" />
+    <ClCompile Include="ssl\d1_pkt.c" />
+    <ClCompile Include="ssl\d1_srtp.c" />
+    <ClCompile Include="ssl\d1_srvr.c" />
+    <ClCompile Include="ssl\kssl.c" />
+    <ClCompile Include="ssl\s23_clnt.c" />
+    <ClCompile Include="ssl\s23_lib.c" />
+    <ClCompile Include="ssl\s23_meth.c" />
+    <ClCompile Include="ssl\s23_pkt.c" />
+    <ClCompile Include="ssl\s23_srvr.c" />
+    <ClCompile Include="ssl\s2_clnt.c" />
+    <ClCompile Include="ssl\s2_enc.c" />
+    <ClCompile Include="ssl\s2_lib.c" />
+    <ClCompile Include="ssl\s2_meth.c" />
+    <ClCompile Include="ssl\s2_pkt.c" />
+    <ClCompile Include="ssl\s2_srvr.c" />
+    <ClCompile Include="ssl\s3_both.c" />
+    <ClCompile Include="ssl\s3_clnt.c" />
+    <ClCompile Include="ssl\s3_enc.c" />
+    <ClCompile Include="ssl\s3_lib.c" />
+    <ClCompile Include="ssl\s3_meth.c" />
+    <ClCompile Include="ssl\s3_pkt.c" />
+    <ClCompile Include="ssl\s3_srvr.c" />
+    <ClCompile Include="ssl\ssl_algs.c" />
+    <ClCompile Include="ssl\ssl_asn1.c" />
+    <ClCompile Include="ssl\ssl_cert.c" />
+    <ClCompile Include="ssl\ssl_ciph.c" />
+    <ClCompile Include="ssl\ssl_err.c" />
+    <ClCompile Include="ssl\ssl_err2.c" />
+    <ClCompile Include="ssl\ssl_lib.c" />
+    <ClCompile Include="ssl\ssl_rsa.c" />
+    <ClCompile Include="ssl\ssl_sess.c" />
+    <ClCompile Include="ssl\ssl_stat.c" />
+    <ClCompile Include="ssl\ssl_txt.c" />
+    <ClCompile Include="ssl\t1_clnt.c" />
+    <ClCompile Include="ssl\t1_enc.c" />
+    <ClCompile Include="ssl\t1_lib.c" />
+    <ClCompile Include="ssl\t1_meth.c" />
+    <ClCompile Include="ssl\t1_reneg.c" />
+    <ClCompile Include="ssl\t1_srvr.c" />
+    <ClCompile Include="ssl\tls_srp.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ssleay32.def" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{14FF6EC6-6187-4C8F-9D61-73241A1A1708}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>ssleay32</RootNamespace>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>NotSet</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>NotSet</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>NotSet</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>NotSet</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(SolutionDir)\lib\Windows\$(Configuration)\$(Platform)</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(SolutionDir)\lib\Windows\$(Configuration)\$(Platform)</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(SolutionDir)\lib\Windows\$(Configuration)\$(Platform)</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(SolutionDir)\lib\Windows\$(Configuration)\$(Platform)</OutDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalOptions>/MDd /Od -DDEBUG -D_DEBUG -DOPENSSL_THREADS  -DDSO_WIN32 -Gs0 -GF -Gy -Zi -nologo -DOPENSSL_SYSNAME_WIN32 -DWIN32_LEAN_AND_MEAN -DL_ENDIAN -D_CRT_SECURE_NO_DEPRECATE -DOPENSSL_USE_APPLINK -I. -DOPENSSL_NO_RC5 -DOPENSSL_NO_MD2 -DOPENSSL_NO_KRB5 -DOPENSSL_NO_JPAKE -DOPENSSL_NO_STATIC_ENGINE %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>include</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalOptions>/nologo /subsystem:console /opt:ref /debug %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalLibraryDirectories>
+      </AdditionalLibraryDirectories>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <ModuleDefinitionFile>ms/ssleay32.def</ModuleDefinitionFile>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalOptions>/MDd /Od -DDEBUG -D_DEBUG -DOPENSSL_THREADS  -DDSO_WIN32 -Gs0 -GF -Gy -Zi -nologo -DOPENSSL_SYSNAME_WIN32 -DWIN32_LEAN_AND_MEAN -DL_ENDIAN -D_CRT_SECURE_NO_DEPRECATE -DOPENSSL_USE_APPLINK -I. -DOPENSSL_NO_RC5 -DOPENSSL_NO_MD2 -DOPENSSL_NO_KRB5 -DOPENSSL_NO_JPAKE -DOPENSSL_NO_STATIC_ENGINE %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>include</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalOptions>/nologo /subsystem:console /opt:ref /debug %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalLibraryDirectories>
+      </AdditionalLibraryDirectories>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <ModuleDefinitionFile>ms/ssleay32.def</ModuleDefinitionFile>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>include</AdditionalIncludeDirectories>
+      <AdditionalOptions>/MD /Ox /O2 /Ob2 -DOPENSSL_THREADS  -DDSO_WIN32 -W3 -Gs0 -GF -Gy -nologo -DOPENSSL_SYSNAME_WIN32 -DWIN32_LEAN_AND_MEAN -DL_ENDIAN -D_CRT_SECURE_NO_DEPRECATE -DOPENSSL_USE_APPLINK -I. -DOPENSSL_NO_RC5 -DOPENSSL_NO_MD2 -DOPENSSL_NO_KRB5 -DOPENSSL_NO_JPAKE -DOPENSSL_NO_STATIC_ENGINE  %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <ModuleDefinitionFile>ms/ssleay32.def</ModuleDefinitionFile>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>include</AdditionalIncludeDirectories>
+      <AdditionalOptions>/MD /Ox /O2 /Ob2 -DOPENSSL_THREADS  -DDSO_WIN32 -W3 -Gs0 -GF -Gy -nologo -DOPENSSL_SYSNAME_WIN32 -DWIN32_LEAN_AND_MEAN -DL_ENDIAN -D_CRT_SECURE_NO_DEPRECATE -DOPENSSL_USE_APPLINK -I. -DOPENSSL_NO_RC5 -DOPENSSL_NO_MD2 -DOPENSSL_NO_KRB5 -DOPENSSL_NO_JPAKE -DOPENSSL_NO_STATIC_ENGINE  %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <ModuleDefinitionFile>ms/ssleay32.def</ModuleDefinitionFile>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

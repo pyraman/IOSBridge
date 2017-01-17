@@ -1,0 +1,235 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{B09B285D-B28F-4037-ABD4-ECB2E53E86A8}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>libimobiledevice</RootNamespace>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionDir)\lib\Windows\$(Configuration)\$(Platform)</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(SolutionDir)\lib\Windows\$(Configuration)\$(Platform)</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>$(SolutionDir)\lib\Windows\$(Configuration)\$(Platform)</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>$(SolutionDir)\lib\Windows\$(Configuration)\$(Platform)</OutDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;HAVE_OPENSSL;LIBIMOBILEDEVICE_STATIC;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SolutionDir)\libimobiledevice\include;$(SolutionDir)\libimobiledevice\;$(SolutionDir)\libplist\include;$(SolutionDir)\3Party\libgen;$(SolutionDir)\libusbmuxd\include;$(SolutionDir)\3Party\include;$(SolutionDir)\3Party\getopt;$(SolutionDir)\3Party\openssl\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SolutionDir)\libimobiledevice\include;$(SolutionDir)\libimobiledevice\;$(SolutionDir)\libplist\include;$(SolutionDir)\3Party\libgen;$(SolutionDir)\libusbmuxd\include;$(SolutionDir)\3Party\include;$(SolutionDir)\3Party\getopt;$(SolutionDir)\3Party\openssl\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;HAVE_OPENSSL;LIBIMOBILEDEVICE_STATIC;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SolutionDir)\libimobiledevice\include;$(SolutionDir)\libimobiledevice\;$(SolutionDir)\libplist\include;$(SolutionDir)\3Party\libgen;$(SolutionDir)\libusbmuxd\include;$(SolutionDir)\3Party\include;$(SolutionDir)\3Party\getopt;$(SolutionDir)\3Party\openssl\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SolutionDir)\libimobiledevice\include;$(SolutionDir)\libimobiledevice\;$(SolutionDir)\libplist\include;$(SolutionDir)\3Party\libgen;$(SolutionDir)\libusbmuxd\include;$(SolutionDir)\3Party\include;$(SolutionDir)\3Party\getopt;$(SolutionDir)\3Party\openssl\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="common\debug.c" />
+    <ClCompile Include="common\socket.c" />
+    <ClCompile Include="common\thread.c" />
+    <ClCompile Include="common\userpref.c" />
+    <ClCompile Include="common\utils.c" />
+    <ClCompile Include="src\afc.c" />
+    <ClCompile Include="src\debugserver.c" />
+    <ClCompile Include="src\device_link_service.c" />
+    <ClCompile Include="src\diagnostics_relay.c" />
+    <ClCompile Include="src\file_relay.c" />
+    <ClCompile Include="src\heartbeat.c" />
+    <ClCompile Include="src\house_arrest.c" />
+    <ClCompile Include="src\idevice.c" />
+    <ClCompile Include="src\installation_proxy.c" />
+    <ClCompile Include="src\lockdown.c" />
+    <ClCompile Include="src\misagent.c" />
+    <ClCompile Include="src\mobilebackup.c" />
+    <ClCompile Include="src\mobilebackup2.c" />
+    <ClCompile Include="src\mobilesync.c" />
+    <ClCompile Include="src\mobile_image_mounter.c" />
+    <ClCompile Include="src\notification_proxy.c" />
+    <ClCompile Include="src\property_list_service.c" />
+    <ClCompile Include="src\restore.c" />
+    <ClCompile Include="src\sbservices.c" />
+    <ClCompile Include="src\screenshotr.c" />
+    <ClCompile Include="src\service.c" />
+    <ClCompile Include="src\syslog_relay.c" />
+    <ClCompile Include="src\webinspector.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="common\debug.h" />
+    <ClInclude Include="common\socket.h" />
+    <ClInclude Include="common\thread.h" />
+    <ClInclude Include="common\userpref.h" />
+    <ClInclude Include="common\utils.h" />
+    <ClInclude Include="include\asprintf.h" />
+    <ClInclude Include="include\endianness.h" />
+    <ClInclude Include="include\libimobiledevice\afc.h" />
+    <ClInclude Include="include\libimobiledevice\debugserver.h" />
+    <ClInclude Include="include\libimobiledevice\diagnostics_relay.h" />
+    <ClInclude Include="include\libimobiledevice\file_relay.h" />
+    <ClInclude Include="include\libimobiledevice\heartbeat.h" />
+    <ClInclude Include="include\libimobiledevice\house_arrest.h" />
+    <ClInclude Include="include\libimobiledevice\installation_proxy.h" />
+    <ClInclude Include="include\libimobiledevice\libimobiledevice.h" />
+    <ClInclude Include="include\libimobiledevice\lockdown.h" />
+    <ClInclude Include="include\libimobiledevice\misagent.h" />
+    <ClInclude Include="include\libimobiledevice\mobilebackup.h" />
+    <ClInclude Include="include\libimobiledevice\mobilebackup2.h" />
+    <ClInclude Include="include\libimobiledevice\mobilesync.h" />
+    <ClInclude Include="include\libimobiledevice\mobile_image_mounter.h" />
+    <ClInclude Include="include\libimobiledevice\notification_proxy.h" />
+    <ClInclude Include="include\libimobiledevice\property_list_service.h" />
+    <ClInclude Include="include\libimobiledevice\restore.h" />
+    <ClInclude Include="include\libimobiledevice\sbservices.h" />
+    <ClInclude Include="include\libimobiledevice\screenshotr.h" />
+    <ClInclude Include="include\libimobiledevice\service.h" />
+    <ClInclude Include="include\libimobiledevice\syslog_relay.h" />
+    <ClInclude Include="include\libimobiledevice\webinspector.h" />
+    <ClInclude Include="src\afc.h" />
+    <ClInclude Include="src\debugserver.h" />
+    <ClInclude Include="src\device_link_service.h" />
+    <ClInclude Include="src\diagnostics_relay.h" />
+    <ClInclude Include="src\file_relay.h" />
+    <ClInclude Include="src\heartbeat.h" />
+    <ClInclude Include="src\house_arrest.h" />
+    <ClInclude Include="src\idevice.h" />
+    <ClInclude Include="src\installation_proxy.h" />
+    <ClInclude Include="src\lockdown.h" />
+    <ClInclude Include="src\misagent.h" />
+    <ClInclude Include="src\mobilebackup.h" />
+    <ClInclude Include="src\mobilebackup2.h" />
+    <ClInclude Include="src\mobilesync.h" />
+    <ClInclude Include="src\mobile_image_mounter.h" />
+    <ClInclude Include="src\notification_proxy.h" />
+    <ClInclude Include="src\property_list_service.h" />
+    <ClInclude Include="src\restore.h" />
+    <ClInclude Include="src\sbservices.h" />
+    <ClInclude Include="src\screenshotr.h" />
+    <ClInclude Include="src\service.h" />
+    <ClInclude Include="src\syslog_relay.h" />
+    <ClInclude Include="src\webinspector.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
